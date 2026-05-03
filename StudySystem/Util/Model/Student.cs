@@ -60,7 +60,10 @@ namespace Util.Model
         public bool Jige()
         {
             return  Study() >= 60;
-
+        }
+        public string Chengji()
+        {
+            return "该学生的学号是" + nmuber + "该学生的姓名是" + name + "该学生的年龄是" + age + "该学生的语文成绩是" + chinesegrade + "该学生的数学成绩是" + mathgrade + "该学生的英语成绩是" + englishgrade;
         }
     }
 

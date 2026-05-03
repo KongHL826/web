@@ -2,6 +2,7 @@
 using System.Net.Http.Headers;
 using Util.Model;
 
+
 Console.WriteLine("Hello, World!");
 
 Console.WriteLine("请输入学生的学号");
@@ -23,11 +24,12 @@ int senglishgrade = int.Parse(engliashgrade);
 
 
 
+Student student1 = new Student(number, name, sage, schinesegrade, smathgrade, senglishgrade);
 
+string studentInformation = student1.Chengji();
 
+Console.WriteLine("stduent information is: " + studentInformation);
 
-
-Student student1 = new Student(number,name,sage,schinesegrade,smathgrade,senglishgrade); 
 int grade = student1.Study();
 Console.WriteLine("学生的平均成绩是"+grade);
 bool pingjun = student1.Jige();
